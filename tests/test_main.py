@@ -12,7 +12,7 @@ client = TestClient(app)
 def test_read_root():
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"mensagem": "Bem-vindo ao app FastAPI com CI/CD!"}
+    assert response.json() == {"message": "Hello, World!"}
 
 def test_saudacao():
     response = client.get("/saudacao/Ana")
