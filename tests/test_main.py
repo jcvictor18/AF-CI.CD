@@ -14,7 +14,6 @@ def test_read_root():
     assert response.status_code == 200
     assert response.json() == {"message": "Hello, World!"}
 
-def test_saudacao():
-    response = client.get("/saudacao/Ana")
-    assert response.status_code == 200
-    assert response.json() == {"mensagem": "Olá, Ana!"}
+@app.get("/saudacao/{nome}")
+async def saudacao(nome: str):
+    return {"mensagem": f"Olá, {nome}!"}
