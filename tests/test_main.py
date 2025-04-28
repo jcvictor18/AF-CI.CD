@@ -30,5 +30,3 @@ def test_saudacao_status_code():
     nome = "Maria"
     response = client.get(f"/saudacao/{nome}")
     assert response.status_code == 200
-
-
