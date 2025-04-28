@@ -1,4 +1,4 @@
-# PRIMEIRO GIT (Atividade Formativa DevOps PUCPR)
+# PRIMEIRO GIT (Atividade Formativa/Somativa DevOps PUCPR)
 
 ## Tecnologias Usadas
 
