@@ -27,6 +27,5 @@ def test_saudacao_conteudo():
     assert response.json()["mensagem"] == f"Olá, {nome}!"
 
 def test_saudacao_status_code():
-    nome = "Maria"
-    response = client.get(f"/saudacao/{nome}")
+    response = client.get(f"/saudacao/")
     assert response.status_code == 200
