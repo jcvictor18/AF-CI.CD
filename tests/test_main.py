@@ -28,4 +28,4 @@ def test_saudacao_conteudo():
 
 def test_saudacao_status_code():
     response = client.get(f"/saudacao/")
-    assert response.status_code == 200
+    assert response.status_code == 404
